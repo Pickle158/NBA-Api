@@ -1,5 +1,5 @@
 import requests  # i think this means import the api library
-API_KEY = "c145f1869fb84cb89dc13e26c3002bc3"  # API key from sportsdata.io, Get ur own
+API_KEY = ""  # API key from sportsdata.io, Get ur own
 
 # Team ID for the Denver Nuggets (replace if needed, Look at README for other TEAM_IDs)
 TEAM_ID = 20
