@@ -1,5 +1,5 @@
 import requests  # i think this means import the api library
-API_KEY = "c145f1869fb84cb89dc13e26c3002bc3"  # API key from sportsdata.io, Get ur own
+API_KEY = "*PUT YOUR API KEY HERE*"  # API key from sportsdata.io, Get ur own
 
 # Team ID for the Denver Nuggets (replace if needed, Look at README for other TEAM_IDs)
 TEAM_ID = 20
@@ -29,7 +29,7 @@ def get_current_game_score():
                         home_score = game["HomeTeamScore"]
                         away_score = game["AwayTeamScore"]
                         return f"{away_team} {away_score} - {home_score} {home_team}"  
-        return "No Denver Nuggets game data found.  There might not be a game today or right now." #No game today or right now
+        return "No game data found.  There might not be a game today or right now." #No game today or right now
     else:
         return f"Error: API request failed with status code {response.status_code}"
 
