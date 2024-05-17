@@ -14,6 +14,7 @@ Thanks to POSTMAN API for help with testing and visualizing the results in a cle
 # Team ID's  
 If you want to get the score of other teams, you must change the TEAM_ID field to your team's ID.  The Available team ID's are listed below.
 Washington  Wizards  Team ID: 1
+
 Charlotte  Hornets  Team ID: 2
 Atlanta  Hawks  Team ID: 3
 Miami  Heat  Team ID: 4
