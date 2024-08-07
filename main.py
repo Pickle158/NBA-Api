@@ -17,9 +17,9 @@ def get_current_game_score():
     nbaUrl = f"https://api.sportsdata.io/v3/nba/scores/json/ScoresBasic/2024-05-06?key={API_KEY}"
     response = requests.get(nbaUrl)
 
-    if response.status_code == 200: #200 is qualified as OK
+    if response.status_code == 200: #200 is qualified as OK i think
         data = response.json()
-        for game in data:  #go through the games to find the one you want
+        for game in data:  # this gos through the games to find the one you want
             if game["HomeTeamID"] == TEAM_ID or game["AwayTeamID"] == TEAM_ID:
                 for game in data:  #sift through the crappy data of the api
                     if not game["Status"] == "NotNecessary":
